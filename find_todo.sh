@@ -16,9 +16,9 @@ while getopts ":hfc" opt; do
 		h)
 			echo "Usage: find_todo.sh <options>"
 			echo ; echo "Options:"
-			echo "Set output file: -o <file> [Default : todo_output]"
 			echo "TODO files only: -f"
 			echo "TODO comments only: -c"
+			exit 0
 			;;
 		\?)
 			echo "Invalid Option: -$OPTARG" >&2
